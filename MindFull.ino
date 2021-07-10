@@ -9,6 +9,9 @@
 #include <PubSubClient.h>
 
 #include "NetworkInfo.h"
+// const char* ssid = "SSID";
+// const char* password = "PASSWORD";
+// const char* mqtt_server = "1.1.1.1";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
