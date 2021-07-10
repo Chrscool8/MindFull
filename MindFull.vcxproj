@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>MindFull</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\MindFull;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src;$(ProjectDir)..\libraries\M5Atom\src;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\Wire\src;$(ProjectDir)..\libraries\FastLED\src;$(ProjectDir)..\libraries\PubSubClient\src;$(ProjectDir)..\libraries\M5Atom\src\utility;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\apps;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\libb64;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\variants\m5stack_atom;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\config;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\app_trace;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\app_update;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\asio;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\bootloader_support;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\bt;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\coap;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\console;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\driver;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\efuse;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp-tls;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp32;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_adc_cal;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_event;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_http_client;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_http_server;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_https_ota;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_https_server;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_ringbuf;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp_websocket_client;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\espcoredump;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\ethernet;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\expat;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\fatfs;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\freemodbus;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\freertos;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\heap;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\idf_test;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\jsmn;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\json;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\libsodium;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\log;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\lwip;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\mbedtls;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\mdns;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\micro-ecc;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\mqtt;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\newlib;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\nghttp;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\nvs_flash;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\openssl;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\protobuf-c;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\protocomm;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\pthread;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\sdmmc;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\smartconfig_ack;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\soc;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\spi_flash;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\spiffs;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\tcp_transport;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\tcpip_adapter;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\ulp;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\unity;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\vfs;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\wear_levelling;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\wifi_provisioning;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\wpa_supplicant;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\xtensa-debug-module;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp-face;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\esp32-camera;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include\fb_gfx;$(ProjectDir)..\..\..\DOCUME~2\Arduino\MindFull;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\lib\gcc\xtensa-esp32-elf\5.2.0\include;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\xtensa-esp32-elf\include\c++\5.2.0\xtensa-esp32-elf;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\xtensa-esp32-elf\include;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\xtensa-esp32-elf\include\c++\5.2.0;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\include\c++\5.2.0;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\include;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.0-newlib4.0.0-gnu23-48f7b08\xtensa-lx106-elf\include\c++\4.8.2;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.0-newlib4.0.0-gnu23-48f7b08\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.0-newlib4.0.0-gnu23-48f7b08\xtensa-lx106-elf\include;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.0-newlib4.0.0-gnu23-48f7b08\lib\gcc\xtensa-lx106-elf\4.8.2\include;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\tools\sdk\include;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\lib\gcc\xtensa-esp32-elf\5.2.0\new;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-97-gc752ad5-5.2.0\lib\gcc\xtensa-esp32-elf\5.2.0\bits;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.MindFull.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__ESP32_esp32__;__ESP32_ESP32__;ESP_PLATFORM;HAVE_CONFIG_H;GCC_NOT_5_2_0=0;WITH_POSIX;F_CPU=240000000L;ARDUINO=108015;ARDUINO_M5Stack_ATOM;ARDUINO_ARCH_ESP32;ESP32;CORE_DEBUG_LEVEL=0;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\library.properties" />
+    <None Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\Wire\library.properties" />
+    <None Include="..\libraries\FastLED\library.json" />
+    <None Include="..\libraries\FastLED\library.properties" />
+    <None Include="..\libraries\M5Atom\library.json" />
+    <None Include="..\libraries\M5Atom\library.properties" />
+    <None Include="..\libraries\PubSubClient\library.json" />
+    <None Include="..\libraries\PubSubClient\library.properties" />
+    <None Include="MindFull.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\apps\sntp\sntp.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Arduino.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\base64.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\binary.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\cbuf.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Client.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\core_version.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Esp.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-adc.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-bt.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-cpu.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-dac.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-gpio.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-i2c.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-ledc.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-log.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-matrix.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-psram.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-rmt.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-sigmadelta.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-spi.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-timer.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-touch.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-uart.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp8266-compat.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\FunctionalInterrupt.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\HardwareSerial.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\IPAddress.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\IPv6Address.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\libb64\cdecode.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\libb64\cencode.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\MD5Builder.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\pgmspace.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Print.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Printable.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Server.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\stdlib_noniso.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Stream.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\StreamString.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Udp.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\WCharacter.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\wiring_private.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\WString.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\ETH.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFi.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiAP.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiClient.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiGeneric.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiMulti.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiScan.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiServer.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiSTA.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiType.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiUdp.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\Wire\src\Wire.h" />
+    <ClInclude Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\variants\m5stack_atom\pins_arduino.h" />
+    <ClInclude Include="..\libraries\FastLED\src\bitswap.h" />
+    <ClInclude Include="..\libraries\FastLED\src\chipsets.h" />
+    <ClInclude Include="..\libraries\FastLED\src\color.h" />
+    <ClInclude Include="..\libraries\FastLED\src\colorpalettes.h" />
+    <ClInclude Include="..\libraries\FastLED\src\colorutils.h" />
+    <ClInclude Include="..\libraries\FastLED\src\controller.h" />
+    <ClInclude Include="..\libraries\FastLED\src\cpp_compat.h" />
+    <ClInclude Include="..\libraries\FastLED\src\dmx.h" />
+    <ClInclude Include="..\libraries\FastLED\src\FastLED.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastled_config.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastled_delay.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastled_progmem.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastpin.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastspi.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastspi_bitbang.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastspi_dma.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastspi_nop.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastspi_ref.h" />
+    <ClInclude Include="..\libraries\FastLED\src\fastspi_types.h" />
+    <ClInclude Include="..\libraries\FastLED\src\hsv2rgb.h" />
+    <ClInclude Include="..\libraries\FastLED\src\led_sysdefs.h" />
+    <ClInclude Include="..\libraries\FastLED\src\lib8tion.h" />
+    <ClInclude Include="..\libraries\FastLED\src\lib8tion\math8.h" />
+    <ClInclude Include="..\libraries\FastLED\src\lib8tion\random8.h" />
+    <ClInclude Include="..\libraries\FastLED\src\lib8tion\scale8.h" />
+    <ClInclude Include="..\libraries\FastLED\src\lib8tion\trig8.h" />
+    <ClInclude Include="..\libraries\FastLED\src\noise.h" />
+    <ClInclude Include="..\libraries\FastLED\src\pixelset.h" />
+    <ClInclude Include="..\libraries\FastLED\src\pixeltypes.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\apollo3\clockless_apollo3.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\apollo3\fastled_apollo3.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\apollo3\fastpin_apollo3.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\apollo3\fastspi_apollo3.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\apollo3\led_sysdefs_apollo3.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\common\m0clockless.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d21\clockless_arm_d21.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d21\fastled_arm_d21.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d21\fastpin_arm_d21.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d21\led_sysdefs_arm_d21.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d51\clockless_arm_d51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d51\fastled_arm_d51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d51\fastpin_arm_d51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\d51\led_sysdefs_arm_d51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\clockless_arm_k20.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\clockless_block_arm_k20.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\fastled_arm_k20.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\fastpin_arm_k20.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\fastspi_arm_k20.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\led_sysdefs_arm_k20.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\octows2811_controller.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\smartmatrix_t3.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k20\ws2812serial_controller.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k66\clockless_arm_k66.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k66\clockless_block_arm_k66.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k66\fastled_arm_k66.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k66\fastpin_arm_k66.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k66\fastspi_arm_k66.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\k66\led_sysdefs_arm_k66.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\kl26\clockless_arm_kl26.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\kl26\fastled_arm_kl26.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\kl26\fastpin_arm_kl26.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\kl26\fastspi_arm_kl26.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\kl26\led_sysdefs_arm_kl26.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\mxrt1062\block_clockless_arm_mxrt1062.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\mxrt1062\clockless_arm_mxrt1062.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\mxrt1062\fastled_arm_mxrt1062.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\mxrt1062\fastpin_arm_mxrt1062.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\mxrt1062\fastspi_arm_mxrt1062.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\mxrt1062\led_sysdefs_arm_mxrt1062.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf51\clockless_arm_nrf51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf51\fastled_arm_nrf51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf51\fastpin_arm_nrf51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf51\fastspi_arm_nrf51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf51\led_sysdefs_arm_nrf51.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\arbiter_nrf52.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\clockless_arm_nrf52.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\fastled_arm_nrf52.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\fastpin_arm_nrf52.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\fastpin_arm_nrf52_variants.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\fastspi_arm_nrf52.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\nrf52\led_sysdefs_arm_nrf52.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\sam\clockless_arm_sam.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\sam\clockless_block_arm_sam.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\sam\fastled_arm_sam.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\sam\fastpin_arm_sam.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\sam\fastspi_arm_sam.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\sam\led_sysdefs_arm_sam.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\stm32\clockless_arm_stm32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\stm32\cm3_regs.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\stm32\fastled_arm_stm32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\stm32\fastpin_arm_stm32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\arm\stm32\led_sysdefs_arm_stm32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\avr\clockless_trinket.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\avr\fastled_avr.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\avr\fastpin_avr.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\avr\fastspi_avr.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\avr\led_sysdefs_avr.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\32\clockless_block_esp32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\32\clockless_i2s_esp32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\32\clockless_rmt_esp32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\32\fastled_esp32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\32\fastpin_esp32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\32\led_sysdefs_esp32.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\8266\clockless_block_esp8266.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\8266\clockless_esp8266.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\8266\fastled_esp8266.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\8266\fastpin_esp8266.h" />
+    <ClInclude Include="..\libraries\FastLED\src\platforms\esp\8266\led_sysdefs_esp8266.h" />
+    <ClInclude Include="..\libraries\FastLED\src\power_mgt.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\M5Atom.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\utility\Button.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\utility\LED_DisPlay.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\utility\M5Timer.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\utility\MahonyAHRS.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\utility\MPU6886.h" />
+    <ClInclude Include="..\libraries\M5Atom\src\utility\Task.h" />
+    <ClInclude Include="..\libraries\PubSubClient\src\PubSubClient.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\Arduino.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\BDDTest.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\Buffer.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\Client.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\IPAddress.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\Print.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\ShimClient.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\Stream.h" />
+    <ClInclude Include="..\libraries\PubSubClient\tests\src\lib\trace.h" />
+    <ClInclude Include="NetworkInfo.h" />
+    <ClInclude Include="__vm\.MindFull.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\base64.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\cbuf.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Esp.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-adc.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-bt.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-cpu.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-dac.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-gpio.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-i2c.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-ledc.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-log.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-matrix.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-misc.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-psram.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-rmt.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-sigmadelta.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-spi.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-time.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-timer.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-touch.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\esp32-hal-uart.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\FunctionalInterrupt.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\HardwareSerial.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\IPAddress.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\IPv6Address.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\main.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\MD5Builder.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Print.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\stdlib_noniso.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\Stream.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\StreamString.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\wiring_pulse.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\wiring_shift.c" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\WMath.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\cores\esp32\WString.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\ETH.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFi.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiAP.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiClient.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiGeneric.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiMulti.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiScan.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiServer.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiSTA.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\src\WiFiUdp.cpp" />
+    <ClCompile Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\Wire\src\Wire.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\bitswap.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\colorpalettes.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\colorutils.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\FastLED.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\hsv2rgb.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\lib8tion.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\noise.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\platforms.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\platforms\esp\32\clockless_rmt_esp32.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\power_mgt.cpp" />
+    <ClCompile Include="..\libraries\FastLED\src\wiring.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\M5Atom.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\utility\Button.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\utility\LED_DisPlay.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\utility\M5Timer.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\utility\MahonyAHRS.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\utility\MPU6886.cpp" />
+    <ClCompile Include="..\libraries\M5Atom\src\utility\Task.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\src\PubSubClient.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\connect_spec.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\keepalive_spec.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\lib\BDDTest.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\lib\Buffer.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\lib\IPAddress.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\lib\ShimClient.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\lib\Stream.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\publish_spec.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\receive_spec.cpp" />
+    <ClCompile Include="..\libraries\PubSubClient\tests\src\subscribe_spec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\WiFi\keywords.txt" />
+    <Text Include="..\..\..\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.6\libraries\Wire\keywords.txt" />
+    <Text Include="..\libraries\FastLED\keywords.txt" />
+    <Text Include="..\libraries\FastLED\src\platforms\arm\d51\README.txt" />
+    <Text Include="..\libraries\PubSubClient\CHANGES.txt" />
+    <Text Include="..\libraries\PubSubClient\keywords.txt" />
+    <Text Include="..\libraries\PubSubClient\LICENSE.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM8" config.Release.customdebug_esp32_m5stack-atom_debugger_type="none" custom_esp32_m5stack-atom_PartitionScheme="default" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
