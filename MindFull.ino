@@ -1,6 +1,5 @@
 // https://i.imgur.com/W7Aqzo5.png
 
-
 #define RX_PIN 32
 #define TX_PIN 26
 
@@ -25,12 +24,14 @@ void reconnect()
 	while (!client.connected()) {
 		Serial.print("Attempting MQTT connection...");
 		// Attempt to connect
-		if (client.connect("ESP8266Client")) {
+		if (client.connect("ESP8266Client"))
+		{
 			Serial.println("connected");
 			// Subscribe
 			client.subscribe("esp32/output");
 		}
-		else {
+		else
+		{
 			Serial.print("failed, rc=");
 			Serial.print(client.state());
 			Serial.println(" try again in 5 seconds");
@@ -41,6 +42,7 @@ void reconnect()
 }
 
 int led_count = 0;
+bool focused = false;
 
 void setup()
 {
@@ -280,8 +282,23 @@ void parse_data()
 	Serial.println(RAW_MARKER);
 
 	Serial.println("---------");
+
+	//if ((ATTENTION > 50) && (MEDITATION < 50) && !focused)
+	//{
+	//	focused = true;
+	//	client.publish("mqtt/MindFlex/data/focused", String("True").c_str());
+	//}
+	//else if ((ATTENTION < 50) && (MEDITATION > 50) && focused)
+	//{
+	//	focused = false;
+	//	client.publish("mqtt/MindFlex/data/focused", String("False").c_str());
+	//}
+
+	client.publish("mqtt/MindFlex/data/COMBO", String(ATTENTION - MEDITATION).c_str());
+
 }
 
+bool initialized = false;
 bool use_mode_2 = false;
 bool activated_mode_2 = false;
 
@@ -291,6 +308,14 @@ void loop()
 		reconnect();
 	}
 	client.loop();
+
+	if (!initialized)
+	{
+		initialized = true;
+
+		Serial.println("Starting up.");
+		client.publish("mqtt/MindFlex/debug/serial", "Starting up.");
+	}
 
 	if (!synced)
 	{
@@ -348,7 +373,6 @@ void loop()
 					{
 						Serial.print("0x");
 						Serial.print(data[i], HEX);
-						//Serial.print(data[i]);
 						Serial.print("\t");
 
 						if (i != packet_size)
